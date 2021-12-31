@@ -1,0 +1,5 @@
+export const SELECT_CLIENT = "SELECT_CLIENT";
+export const SELECT_PRODUCTS = "SELECT_PRODUCTS";
+export const PRODUCT_AMOUNT = "PRODUCT_AMOUNT";
+export const SET_DEADLINE = "SET_DEADLINE";
+export const RESET_ORDER = "RESET_ORDER";
