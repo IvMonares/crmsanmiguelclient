@@ -34,6 +34,21 @@ const GET_VENDOR = gql`
   }
 `;
 
+// GQL to get user's clients
+const GET_CLIENTS = gql`
+  query getClients {
+    getClients {
+      id
+      name
+      last_name
+      company
+      address
+      email
+      phone
+    }
+  }
+`;
+
 // Regex to validate phone numbers
 const phoneRegex =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;

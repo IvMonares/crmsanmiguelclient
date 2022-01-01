@@ -56,7 +56,8 @@ const ORDER_STATE_OPTIONS = [
 
 const Order = ({ order }) => {
   // Get variables
-  const { id, items, client, total, state } = order;
+  const { id, items, client, total, state, deadline } = order;
+  const formattedDeadline = new Date(deadline).toLocaleDateString("en-US");
 
   // State for order's completion state
   const [orderState, setOrderState] = useState(state);
@@ -192,6 +193,8 @@ const Order = ({ order }) => {
           )}
         </div>
         <div>
+          <h2 className="text-gray-800 font-bold">Deadline:</h2>
+          <p className="mb-2">{formattedDeadline}</p>
           <h2 className="text-gray-800 font-bold">Status:</h2>
           <Select
             id="client"
