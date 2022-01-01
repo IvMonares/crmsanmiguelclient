@@ -101,6 +101,9 @@ const Login = () => {
       <Layout>
         {message && showMessage()}
 
+        <h1 className="text-center text-2xl text-white font-bold mb-10 uppercase">
+          CRM San Miguel Shoe
+        </h1>
         <h1 className="text-center text-2xl text-white font-light">Log In</h1>
 
         <div className="flex justify-center mt-5">
